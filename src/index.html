@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiculum Vitae</title>
+    <link rel="stylesheet" href="/src/final.css">
+    <script>if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }</script>
+</head>
+<body >
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+        <div class="container">
+            <div class="relative flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#home" class="block py-6 text-lg font-bold text-primary">
+                        Alexelsalam
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                        <span class="transition duration-300 origin-top-left hamburger-line"></span>
+                        <span class="transition duration-300 hamburger-line "></span>
+                        <span class="transition duration-300 origin-bottom-left hamburger-line "></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-800 lg:dark:bg-transparent">
+                        <ul class="block lg:flex ">
+                            <li class="group">
+                                <a href="#home" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem]">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem] ">Tentang saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Album" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem]">Album</a>
+                            </li>
+                            <li class="group">
+                                <a href="#platform" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem]">Platform</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Song" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem]">Song</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="flex py-2 mx-8 text-base text-slate-700z group-hover:text-primary dark:text-white md:dark:text-white md:text-[0.92rem]">Contact</a>
+                            </li>
+                            <li class="flex items-center mx-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500">
+                                            <div class="w-4 h-4 transition duration-300 ease-out bg-white rounded-full toggle-circle"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-32 dark:bg-dark"> 
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="self-center w-full lg:pl-32 md:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-2xl ">Hello Word👋, Saya <span class="block mt-1 text-4xl font-bold text-dark lg:text-5xl dark:text-white">Alexelsalam</span></h1>
+                    <h2 class="mb-5 text-lg font-medium text-secondary">Student & <span class="text-dark dark:text-white">Student</span></h2>
+                    <p class="mb-10 font-medium leading-relaxed text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident perferendis accusamus quod esse!</p>
+                    <a href="#" class="px-8 py-3 font-semibold text-white transition duration-300 ease-in-out bg-blue-600 rounded-full text base hover:bg-primary hover:shadow-lg">Hubungi saya</a>
+                </div>
+                <div class="self-end w-full px-4 md:w-1/2">
+                    <div class="relative mt-10 md:max-w-sm md:mt-4 md:right-10 lg:left-8">
+                        <img src="/dist/img/jb3-removebg-preview.png" alt="Alexelsalam" class="relative z-10 mx-auto max-full">
+                        <span class="absolute top-0 -translate-x-1/2 left-1/2 ">
+                            <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#3b82f6" d="M48.3,-61C59.2,-48.4,62.2,-30,62.1,-13.5C61.9,2.9,58.5,17.4,51.4,29.5C44.2,41.6,33.2,51.4,19.4,58.9C5.6,66.4,-11.2,71.5,-27.4,68.5C-43.6,65.5,-59.2,54.4,-65.2,39.7C-71.2,25.1,-67.4,6.9,-62.7,-9.6C-58,-26.1,-52.4,-40.9,-41.8,-53.6C-31.2,-66.2,-15.6,-76.7,1.6,-78.6C18.7,-80.4,37.4,-73.7,48.3,-61Z" transform="translate(100 100)" />
+                              </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Hero Section End -->
+
+    <!-- about section Start -->
+    <section id="about" class="pb-32 pt-36 dark:bg-dark ">
+        <div class="container">
+            <div class="flex flex-wrap lg:pl-32 ">
+                <div class="w-full px-4 mb-10 sm:w-1/2">
+                    <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+                    <h2 class="mb-5 text-3xl font-bold text-dark md:max-w-sm dark:text-white">Mulai Belajar Front end Devoloper</h2>
+                    <p class="max-w-md text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore quos incidunt aperiam excepturi, molestiae soluta at fugit laborum vitae? Quae, qui voluptate? Quam quisquam, consequatur ipsa facilis sapiente dolorem!</p>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 sm:mt-8 md:mt-8">
+                    <h3 class="mb-2 text-2xl font-bold text-dark sm:mb-14 sm:text-4xl dark:text-white">My Skill!</h3>
+                    <p class="max-w-md text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia praesentium fugiat magnam deserunt consectetur dolore, sed dolores veniam qui, fugit, nam dolorem harum. Rerum explicabo eum perferendis fugit repellendus saepe.</p>
+                    <div class="flex items-center mt-2">                       
+                        <!-- whatsapp -->
+                        <a href="#" target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/Alexelsalam " target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                            <svg role="img" width="20" class="fill-current"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/alexelsalam" target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                            <svg role="img" width="20" class="fill-current"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about section End -->
+    
+    <!-- Portfolio Start -->
+    <section id="Album" class="pt-16 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4 ">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary md:text-2xl">Album</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">Favorite Album</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae exercitationem itaque, laboriosam nam omnis consequuntur suscipit asperiores autem esse.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center w-full px-4 lg:w-10/12 lg:mx-auto">
+                <div class="p-4 mb-12 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md ">
+                        <img src="/dist/img/cover.jpg" alt="Landing Page" width="w-full" height=""/>
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Justice</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eligendi! Commodi id labore autem quaerat quia, illum, perferendis dolore minus error harum porro magni natus vel suscipit, veritatis facilis veniam.</p>
+                </div>
+                <div class="p-4 mb-12 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                        <img src="/dist/img/cover2.jpg" alt="Landing Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Purpose</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eligendi! Commodi id labore autem quaerat quia, illum, perferendis dolore minus error harum porro magni natus vel suscipit, veritatis facilis veniam.</p>
+                </div>
+                <div class="p-4 mb-12 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md h-[19.5rem]">
+                        <img src="/dist/img/cover3.jpg" alt="Landing Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Changes</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eligendi! Commodi id labore autem quaerat quia, illum, perferendis dolore minus error harum porro magni natus vel suscipit, veritatis facilis veniam.</p>
+                </div>              
+            </div>    
+        </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- clients Start -->
+    <section id="Platform" class="pb-32 pt-36 bg-slate-700 dark:bg-slate-700">
+        <div class="container">
+            <div class="w-full px-4 ">
+                <div class="max-w-xl mx-auto text-center mb-9">
+                    <h4 class="mb-2 text-lg font-semibold text-primary md:text-2xl">Platform</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-white md:text-4xl dark:text-white">Paling sering di gunakan</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae exercitationem itaque,</p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#" class="max-w-[120px] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-500 mx-5">
+                        <img src="/dist/img/spotify.svg.webp" alt="">
+                    </a>
+                    <a href="#" class="max-w-[70px] grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-500">
+                        <img src="/dist/img/yt.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- clients End -->
+
+    <!-- Blog Start -->
+    <section id="Song" class="pt-32 pb-32 bg-slate-100 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4 ">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary md:text-2xl">Song</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">Favorite Song</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae exercitationem itaque, laboriosam nam omnis consequuntur suscipit asperiores autem esse.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap ">
+                <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                    <div class="overflow-hidden bg-white shadow-lg rounded-xl dark:bg-slate-800">
+                        <img src="/dist/img/song1.jpg" alt="Love yourself" class="w-full"/>
+                    <div class="px-6 py-4">
+                        <h3>
+                            <a href="https://open.spotify.com/intl-id/track/1f8zcJPvJKvxAOjEqM0pyc" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Love Yourself</a>
+                        </h3>
+                        <p class="pb-2 text-base font-medium text-secondary">For all the times that you rained on my parade
+                            And all the clubs you get in using my name
+                            You think you broke my heart, oh, girl,
+                        </p>
+                        <a href="https://open.spotify.com/intl-id/track/1f8zcJPvJKvxAOjEqM0pyc" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Dengerin Selengkapnya</a>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full px-4 py-6 md:w-1/2 lg:w-1/3 md:pt-0">
+                    <div class="overflow-hidden bg-white shadow-lg rounded-xl dark:bg-slate-800">
+                        <img src="/dist/img/song2.jpg" alt="Intentions" class="w-full"/>
+                    <div class="px-6 py-4 ">
+                        <h3>
+                            <a href="https://open.spotify.com/intl-id/track/4umIPjkehX1r7uhmGvXiSV" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Intentions</a>
+                        </h3>
+                        <p class="pb-2 text-base font-medium text-secondary">Picture perfect, you don't need no filter
+                            Gorgeous, make 'em drop dead, you're a killer
+                            Shower you with all my attention
+                            </p>
+                        <a href="https://open.spotify.com/intl-id/track/4umIPjkehX1r7uhmGvXiSV" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Dengerin Selengkapnya</a>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full px-4 py-6 md:w-1/2 lg:w-1/3 md:pt-0 ">
+                    <div class="overflow-hidden bg-white shadow-lg rounded-xl dark:bg-slate-800">
+                        <img src="/dist/img/song3.jpg" alt="Live is worth living" class="w-full"/>
+                    <div class="px-6 py-4">
+                        <h3>
+                            <a href="https://open.spotify.com/intl-id/track/6v3K6OzmSrwMgSNuPYIBrc" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Live is worth living</a>
+                        </h3>
+                        <p class="pb-2 text-base font-medium text-secondary">Ended up on a crossroad
+                            Try to figure out which way to go
+                            It's like you're stuck on a treadmill
+                            Running in the same place </p>
+                        <a href="https://open.spotify.com/intl-id/track/6v3K6OzmSrwMgSNuPYIBrc" class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Dengerin Selengkapnya</a>
+                    </div>
+                </div>
+                </div>
+    </section>
+    <!-- Blog End -->
+
+    <!-- Contact Start -->
+    <section id="contact" class="pt-32 pb-3 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4 ">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary md:text-2xl">Contact</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">Sharing is caring</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <form>
+                <div class="w-full md:w-2/3 md:mx-auto">
+                <div class="w-full px-4 mb-8">
+                    <label for="name" class="text-base font-bold text-primary">Nama</label>
+                    <input type="text" id="name" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                </div>
+                <div class="w-full px-4 mb-8">
+                    <label for="Email" class="text-base font-bold text-primary">Email</label>
+                    <input type="email" id="Email" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                </div>
+                <div class="w-full px-4 mb-8">
+                    <label for="message" class="text-base font-bold text-primary">Pesan</label>
+                    <textarea type="text" id="message" class="w-full h-32 p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+                </div>
+                <div class="w-full px-4">
+                    <button class="w-full px-8 py-3 text-base font-semibold text-white transition duration-500 rounded-full bg-primary hover:opacity-80 hover:shadow-lg">Kirim</button>
+                </div>
+                </div>
+            </form>
+        </div>    
+    </section>        
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="pt-24 pb-12 bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full mb-12 text-base font-medium text-slate-300 md:w-1/3">
+                    <h2 class="mb-5 text-4xl font-bold text-white">ELS</h2>
+                    <h3 class="mb-2 text-2xl font-bold">Contact</h3>
+                    <div class=" lg:text-sm">
+                    <p>alexsalam.els@gmail.com</p>
+                    <p>Pekalongan Selatan</p>
+                    <p>Pekalongan</p>
+                    </div>
+                </div>
+                <div class="w-full mb-12 md:w-1/3">
+                    <h3 class="mb-5 text-2xl text-white semi-bold">Favorite Song</h3>
+                    <ul class="pb-8 text-slate-300">
+                        <li>
+                            <a href="https://open.spotify.com/intl-id/track/1f8zcJPvJKvxAOjEqM0pyc" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Love yourself</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/intl-id/track/4umIPjkehX1r7uhmGvXiSV" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Intentions</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/intl-id/track/6v3K6OzmSrwMgSNuPYIBrc" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Live is worth living</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-12 md:w-1/3">
+                    <h3 class="mb-5 text-2xl text-white semi-bold">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#Album" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Album </a>
+                        </li>
+                        <li>
+                            <a href="#Platform" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Platform </a>
+                        </li>
+                        <li>
+                            <a href="#Song" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Song </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block pb-2 text-base lg:text-sm hover:text-primary">Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-800">
+                <div class="flex items-center justify-center mt-2">                       
+                    <!-- whatsapp -->
+                    <a href="#" target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/Alexelsalam " target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                        <svg role="img" width="20" class="fill-current"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/alexelsalam" target="_blank" class="flex justify-center mr-3 border rounded-full w-9 h-9 item-center border-slate-400 hover:bg-primary hover:border-primary hover:text-white text-secondary">
+                        <svg role="img" width="20" class="fill-current"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    </a>
+                </div>
+                <p class="text-xs font-medium text-center text-slate-500">Dibuat oleh <a href="" class="font-bold text-primary">Alexelsalam</a>, Menggunakan Tailwind CSS.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed z-50 items-center justify-center hidden p-4 rounded-full bottom-4 right-4 h-11 w-11 bg-primary hover:animate-bounce" id="to-top">
+        <span class="block w-3 h-3 mt-2 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+    
+    <script src="/src/script.js"></script>
+</body>
+</html>
